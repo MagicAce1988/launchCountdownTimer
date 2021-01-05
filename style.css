@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root {
+  --veryDarkBlue: #1e1f29;
+  --darkDeSaturatedBlue: #343650;
+  --grayishBlue: #8486a9;
+  --softRed: #fb6087;
+  --svgColor: #8385a9;
+}
+
+html {
+  background: var(--veryDarkBlue) url(images/bg-stars.svg) no-repeat center
+    center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 3;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  flex: 1.2;
+  background: url(images/pattern-hills.svg) no-repeat center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media svg {
+  fill: var(--svgColor);
+}
+
+.social-media svg:hover {
+  fill: var(--softRed);
+  cursor: pointer;
+}
+
+.content {
+  height: 60%;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content h2 {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Red Hat Text', sans-serif;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+.time-blocks {
+  width: 100%;
+
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-block {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time-block h4 {
+  font-family: 'Red Hat Text', sans-serif;
+  color: var(--grayishBlue);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.numbers-container {
+  background: var(--darkDeSaturatedBlue);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbers-container h1 {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 4em;
+  color: var(--softRed);
+}
